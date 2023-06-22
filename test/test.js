@@ -29,7 +29,7 @@ async function run() {
     }
   });
 
-  console.log(await client.reset())
+  await client.reset()
   console.log(await client.heartbeat())
 
   await client.getOrCreateCollection({ name: "test" });

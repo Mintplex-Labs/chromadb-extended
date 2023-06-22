@@ -1,6 +1,6 @@
 {
   "name": "@mintplex-labs/chromadb-extended",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A chromadb NodeJS extended client that enables you to pass custom authorization headers and options to your chromaDB instance",
   "main": "dist/index.js",
   "files": [

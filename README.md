@@ -20,6 +20,16 @@ const chroma = new ChromaClient({
   }
 });
 
+// Now use as you normally would use chromadb
+
+await client.reset()
+await client.heartbeat()
+await client.getOrCreateCollection({ name: "test" });
+await client.listCollections()
+const collection = await client.getCollection({ name: 'test' })
+await collection.count()
+await collection.add({ ids, embeddings, metadatas })
+// etc etc
 ```
 ## License
 
